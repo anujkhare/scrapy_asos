@@ -30,7 +30,7 @@ DATABASE = {
     'database': 'scrape'
 }
 	
-ITEM_PIPELINES = {'asos.pipelines.AsosPipeline': 0,
+ITEM_PIPELINES = {'asos.pipelines.AsosPipeline': 1,
                  }
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

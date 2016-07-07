@@ -10,9 +10,11 @@ def db_connect():
     """ performs db connect using db settings from settings.py.
         Returns sqlalchemy engine instance
         """
+    # print ('db_cnnect\n\n')
     return create_engine(URL(**settings.DATABASE))
 
 def create_jackets_table(engine):
+    # print('create_jackets_table\n\n\n')
     DeclarativeBase.metadata.create_all(engine)
 
 class Jackets(DeclarativeBase):
