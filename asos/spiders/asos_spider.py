@@ -29,9 +29,6 @@ class AsosSpider(BaseSpider):
             # names are in a span of class "name"
             item['name'] = li.select(".//span[@class='name']/text()").extract()
             l = item['name']
-            print (type(l))
-            print (len(l))
-            print (l[0])
 
             # price
             item['price_orig'] = li.select(".//div[@class='price-wrap price-previous']/span[@class='price']/text()").extract()
